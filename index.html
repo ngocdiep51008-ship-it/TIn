@@ -3,25 +3,29 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<h1><title>Tiệm Cafe Munn Mốc</title></h1>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Pacifico&display=swap" rel="stylesheet">
 <style>
   body { font-family: Lora, serif; background:#faf3eb; margin:0; }
-  h1 { font-family: Pacifico, cursive; background:#faf3eb; margin:0; color: #faf3eb;}
-  header { background:#ffe6ee; padding:20px; text-align:center; font-size:32px; font-weight:bold; }
-  .logo { width: 120px; }
+  header { background:#ffe6ee; padding:20px; text-align:center; font-size:32px; font-family: Pacifico, cursive; font-weight:bold; color: #bf9000; margin:0}
+  .logo { width: 150px; }
   nav { background:#ffc4c8; padding:10px; text-align:center; }
   nav a { margin:0 15px; text-decoration:none; color:#fff; font-weight:bold; }
   .container { padding:20px; max-width:900px; margin:auto; }
   footer { text-align:center; padding:20px; opacity:.7; }
+  .main-layout { display: flex; max-width: 100%; margin: 0 auto; align-items: flex-start; padding: 20px 0; }
+  .ad-sidebar { flex-basis: 15%; padding: 50px 10px; font-size: 16px; text-align: center; color: #8d6e63; line-height: 1.5; font-weight: 500; box-sizing: border-box; background-color: #fce4ec; }
+  .content-wrapper { flex-basis: 70%; display: flex; flex-direction: column; align-items: center; padding: 0 20px; }
+</style>
 </style>
 </head>
 <body>
-<header>
-<a href="index.html">Tiệm Café Munn Mốc</a>
-<a href="index.html">
-<div style="width: 50px; height: 50px; border-radius: 50%; overflow: hidden; ">
-  <img src="Logo.jpg" alt="Logo" style="width: 100%; height: 100%; object-fit: cover; ">
+<header style="display: flex; justify-content: space-between; align-items: center;">
+<a href="index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; width: 100%">
+<div style="width: 50px; height: 50px; border-radius: 50%; overflow: hidden;">
+<img src="Logo.jpg" alt="Logo" style="width: 100%; height: 100%; object-fit: cover;">
+</div>
+<div style="color: #bf9000; font-size: 1.5em; text-align:center; width: 100%">
+Tiệm Café Munn Mốc
 </div>
 </a>
 </header>
@@ -31,11 +35,17 @@
   <a href="Café.html">Cafe</a>
   <a href="Non-Café.html">Non-cafe</a>
 </nav>
-<div class="container">
+<div class="main-layout">
+<div class="ad-sidebar" style="order: 1;">QUẢNG CÁO<br>CHỤP ẢNH<br>KỶ YẾU<br>THANH XUÂN<br>VƯỜN TRƯỜNG</div>
+<div class="content-wrapper" style="order: 2;">
+<div class="container" style="width: 100%; padding: 0 0 20px 0;">
   <h2>Munn Mốc rất hân hạnh được chào đón bạn đến với góc café nhỏ ấm áp của mình!</h2>
   <p>Munn Mốc là tiệm café mang phong cách ngọt ngào và dễ thương với những gam màu pastel nhẹ nhàng. Đến với Munn Mốc, bạn sẽ được thưởng thức những chiếc bánh ngọt hấp dẫn cùng những ly đồ uống thơm ngon, thanh nhẹ trong một không gian yên bình và thoáng đãng. Đặc biệt, với những ai yêu mèo, đây còn là cơ hội tuyệt vời để chơi đùa cùng chú mèo mũm mĩm đáng yêu của quán - chắc chắn sẽ mang đến cho bạn những trải nghiệm thú vị.</p>
 </div>
-<img src="Bìa.jpg" style="width: 70%; border-radius: 8px">>
+<img src="Bìa.jpg" alt="Ảnh bìa Munn Mốc" style="width: 95%; border-radius: 8px; margin-bottom: 20px;">
+</div>
+<div class="ad-sidebar" style="order: 3;">QUẢNG CÁO<br>CHỤP ẢNH<br>KỶ YẾU<br>THANH XUÂN<br>VƯỜN TRƯỜNG</div>
+</div>
 <footer>Email: munnmoclabel@gmail.com — SĐT: 0905102008 — Hà Nội</footer>
 </body>
 </html>

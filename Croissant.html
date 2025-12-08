@@ -13,17 +13,22 @@
   nav { background:#ffc4c8; padding:10px; text-align:center; }
   nav a { margin:0 15px; text-decoration:none; color:#fff; font-weight:bold; }
   .container { padding:20px; max-width:900px; margin:auto; }
-  .box { display: flex; gap: 10px; text-align:center}
-  .box img {width: 20%; height: 50%; border-radius: 8px;}
+  .box { display: flex; gap: 10px; }
+  .box img {width: 25%; height: 50%; border-radius: 8px;}
   footer { text-align:center; padding:20px; opacity:.7; }
+  .main-layout { display: flex; max-width: 100%; margin: 0 auto; align-items: flex-start; padding: 20px 0; }
+  .ad-sidebar { flex-basis: 15%; padding: 50px 10px; font-size: 16px; text-align: center; color: #8d6e63; line-height: 1.5; font-weight: 500; box-sizing: border-box; background-color: #fce4ec; }
+  .content-wrapper { flex-basis: 70%; display: flex; flex-direction: column; align-items: center; padding: 0 20px; }
 </style>
 </head>
 <body>
-<header>
-<a href="index.html">Tiệm Café Munn Mốc</a>
-<a href="index.html">
-<div style="width: 50px; height: 50px; border-radius: 50%; overflow: hidden; ">
-  <img src="Logo.jpg" alt="Logo" style="width: 100%; height: 100%; object-fit: cover; ">
+<header style="display: flex; justify-content: space-between; align-items: center;">
+<a href="index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; width: 100%">
+<div style="width: 50px; height: 50px; border-radius: 50%; overflow: hidden;">
+<img src="Logo.jpg" alt="Logo" style="width: 100%; height: 100%; object-fit: cover;">
+</div>
+<div style="color: #bf9000; font-size: 1.5em; text-align:center; width: 100%; font-family: Pacifico, cursive;">
+Tiệm Café Munn Mốc
 </div>
 </a>
 </header>
@@ -33,6 +38,10 @@
   <a href="Café.html">Cafe</a>
   <a href="Non-Café.html">Non-cafe</a>
 </nav>
+<div class="main-layout">
+<div class="ad-sidebar" style="order: 1;">QUẢNG CÁO<br>CHỤP ẢNH<br>KỶ YẾU<br>THANH XUÂN<br>VƯỜN TRƯỜNG</div>
+<div class="content-wrapper" style="order: 2;">
+<div class="container" style="width: 100%; padding: 0 0 20px 0;">
 <h2>Croissant</h2>
 <p>Bánh sừng bò nhiều lớp bơ được nướng vàng óng, giòn rụm bên ngoài và mềm xốp bên trong. Mỗi lớp bánh như tan ra, để lại hương bơ thơm ngậy đặc trưng kiểu Pháp.</p>
 <div class="box">
@@ -41,6 +50,9 @@
   <img src="Salted Egg Croissant.jpg">
   <img src="Strawberry Croissant.jpg">
 </div>
-
+</div>
+</div>
+<div class="ad-sidebar" style="order: 3;">QUẢNG CÁO<br>CHỤP ẢNH<br>KỶ YẾU<br>THANH XUÂN<br>VƯỜN TRƯỜNG</div>
+</div>
 </body>
 </html>
