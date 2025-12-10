@@ -15,8 +15,9 @@
   .box { display: flex; gap: 10px; justify-content: space-between}
   .box img {width: auto; height: 250px; object-fit: cover; border-radius: 8px; }
   footer { text-align:center; padding:20px; opacity:.7; }
+  .link {text-decoration: none; color: #bf9000;}
   .effect { width: 300px; border-radius: 10px; transition: 0.3s;}
-  .effect:hover {box-shadow: 0 0 20px #ffc4c8;}
+  .effect:hover {box-shadow: 0 0 20px #f1949a; transform: scale(1.05); filter: brightness(1.0);}
   .main-layout { display: flex; max-width: 100%; margin: 0 auto; align-items: flex-start; padding: 20px 0; }
   .ad-sidebar { flex-basis: 15%; padding: 50px 10px; font-size: 16px; text-align: center; color: #8d6e63; line-height: 1.5; font-weight: 500; box-sizing: border-box; background-color: #fce4ec; }
   .content-wrapper { flex-basis: 70%; display: flex; flex-direction: column; align-items: center; padding: 0 20px; }
@@ -46,16 +47,16 @@ Tiệm Café Munn Mốc
 <h2>Bánh Ngọt</h2>
 <p>Tại Munn Mốc, mỗi chiếc bánh ngọt đều được tạo ra với mong muốn mang đến cho bạn một khoảnh khắc thật dịu dàng, hạnh phúc. Các nguyên liệu đều được chọn lọc tươi mới mỗi ngày, kết hợp cùng công thức tinh tế để tạo nên hương vị thật hài hoà, nhẹ nhàng nhưng đầy cảm xúc.Một chút ngọt ngào – một chút an yên. Đó là cảm giác chúng tôi muốn gửi đến bạn trong mỗi chiếc bánh.</p>
 <div style="display: flex; gap: 120px; ">
-<a href="Tiramisu.html">Tiramisu</a>
-<a href="Burnt Cheesecake.html">Burnt Cheesecake</a>
-<a href="Croissant.html">Croissant</a>
-<a href="Macaron.html">Macaron</a>
+<a href="Tiramisu.html" class="link">Tiramisu</a>
+<a href="Burnt Cheesecake.html" class="link">Burnt Cheesecake</a>
+<a href="Croissant.html" class="link">Croissant</a>
+<a href="Macaron.html" class="link">Macaron</a>
 </div>
 <br>
 </div>
 <div class="box">
-  <a href="Burnt Cheesecake.html"><img src="Burnt Cheesecake.jpg" class="effect"></a>
   <a href="Tiramisu.html"><img src="Tiramisu.webp" class="effect"></a>
+  <a href="Burnt Cheesecake.html"><img src="Burnt Cheesecake.jpg" class="effect"></a>
   <a href="Croissant.html"><img src="Croissant.jpg" class="effect"></a>
   <a href="Macaron.html"><img src="Macaron.webp" class="effect"></a>
 </div>
